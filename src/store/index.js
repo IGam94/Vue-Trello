@@ -6,11 +6,15 @@ Vue.use(Vuex)
 
 const store = new Vuex.Store({
   state: {
-    isAddBoard: false
+    isAddBoard: false,
+    boards:[]
   },
   mutations:{
     SET_IS_ADD_BOARD(state, toggle){
       state.isAddBoard = toggle
+    },
+    SET_BOARDS(state,boards){
+      state.boards = boards
     }
   },
   actions:{
