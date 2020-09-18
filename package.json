@@ -11,7 +11,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "front": "cd client && npm run dev",
     "server": "cd server && npm run dev",
-    "dev": "concurrently \"npm run server\" \"npm run front\""
+    "dev": "concurrently \"npm run server\" \"npm run front\"",
+    "ni": "concurrently \"cd server && npm install\" \"cd client && npm install\""
   },
   "author": "",
   "license": "ISC"
